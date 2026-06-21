@@ -79,28 +79,41 @@
 
 # part 2
 # step 1
-trip_choose = input("where you want to go: forest, cave, or river ")
-if trip_choose == "forest":
-    hide_or_walk = input("they want to hide or walk ")
-    if hide_or_walk == "hide":
-        print("You hide behind a tree")
-    elif hide_or_walk == "walk":
-        print("You find a sleeping wolf")
-    else:
-        print("Invalid forest action")
-elif trip_choose == "cave":
-    torch = input("you have a torch by entering yes or no ")
-    if torch == "yes":
-        left_or_right = input("you want to go left or right ")
-        if left_or_right == "left":
-            print("You find gold")
-        elif left_or_right == "right":
-            print("You find bats")
-        else:
-            print("Invalid cave path")
-    elif torch == "no":
-        print("It is too dark to enter")
-elif trip_choose == "river":
-    print("You find a boat")
+# trip_choose = input("where you want to go: forest, cave, or river ")
+# if trip_choose == "forest":
+#     hide_or_walk = input("they want to hide or walk ")
+#     if hide_or_walk == "hide":
+#         print("You hide behind a tree")
+#     elif hide_or_walk == "walk":
+#         print("You find a sleeping wolf")
+#     else:
+#         print("Invalid forest action")
+# elif trip_choose == "cave":
+#     torch = input("you have a torch by entering yes or no ")
+#     if torch == "yes":
+#         left_or_right = input("you want to go left or right ")
+#         if left_or_right == "left":
+#             print("You find gold")
+#         elif left_or_right == "right":
+#             print("You find bats")
+#         else:
+#             print("Invalid cave path")
+#     elif torch == "no":
+#         print("It is too dark to enter")
+# elif trip_choose == "river":
+#     print("You find a boat")
+# else:
+#     print("Unknown place")
+# step 2
+Calculator_number_first = float(input("enter first number to Calculator "))
+Calculator_number_second = float(input("enter second number to Calculator "))
+Calculator_action = input("enter an action: add, subtract, or multiply ")
+if Calculator_action == "add":
+    print(f"your result is {Calculator_number_first + Calculator_number_second}")
+elif Calculator_action == "subtract":
+    print(f"your result is {Calculator_number_first - Calculator_number_second}")
+elif Calculator_action == "multiply":
+    print(f"your result is {Calculator_number_first * Calculator_number_second}")
 else:
-    print("Unknown place")
+    print("Unknown action")
+    
