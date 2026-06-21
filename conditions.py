@@ -26,3 +26,9 @@ elif battery < 20 and is_charging == False:
     print("Low battery, connect charger")
 else:
     print("Battery OK")
+# step 5
+password = input("enter your password to get access ")
+if password == "python123":
+    print("Access approved")
+else:
+    print("Access denied")
