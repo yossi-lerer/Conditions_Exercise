@@ -12,3 +12,8 @@ if temperature > 37.5:
 else:
     print("Normal temperature")
 # step 3
+number = int(input("enter number to check if it is even "))
+if number % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
