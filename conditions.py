@@ -66,3 +66,13 @@ if username == "":
     print("Guest user")
 else:
     print(f"Hello {username}")
+# step 10
+hour = 10
+if hour > 23 or hour < 0:
+    print("Invalid hour")
+elif hour < 12:
+    print("Morning")
+elif hour < 18:
+    print("Afternoon")
+else:
+    print("Evening")
